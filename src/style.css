@@ -55,7 +55,7 @@
 }
 
 #nav + nav {
-    transition: .4s;
+    transition: 0.4s;
 }
 
 #nav:checked + nav {
@@ -64,4 +64,16 @@
 
 #nav:checked ~ .blur {
     display: block;
+}
+
+#filter + div {
+    height: 0;
+    transition: 0.2s;
+    border-radius: 8px;
+}
+
+#filter:checked + div {
+    height: 660px;
+    border: 1px solid #3e4d3157;
+    padding: 10px;
 }

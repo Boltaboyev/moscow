@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gorbushka Moscow</title>
+    <title>Page 3</title>
     <link rel="stylesheet" href="./src/output.css">
 
     <!-- Link Swiper's CSS -->
@@ -131,242 +131,113 @@
             class="blur hidden h-[100vh] w-full bg-[#3e4d315b] backdrop-blur-[2px] z-[666] fixed top-0 left-0"></label>
     </header>
 
-
     <div class="py-[10px]">
         <div class="container2 text-[#3e4d31] font-[600] flex justify-start items-center gap-[10px]">
-            <a href="./catalog.html" class="border-b border-[#3e4d31]">page 2</a>
+            <a href="./index.html" class="border-b border-[#3e4d31]">page 1</a>
             <p>/</p>
-            <a href="./product.html" class="border-b border-[#3e4d31]">page 3</a>
+            <a href="./catalog.html" class="border-b border-[#3e4d31]">page 2</a>
         </div>
     </div>
 
-    <section class="py-[20px]">
-        <div class="container2">
-            <div class="grid grid-cols-3 gap-[20px] max-[1020px]:grid-cols-1">
-                <!-- Swiper -->
-                <div class="col-span-2 max-[1020px]:cp">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div
-                                    class="rounded-md bg-[#262626] overflow-hidden flex w-full max-[645px]:py-[30px] max-[645px]:justify-center justify-between px-[30px]">
-                                    <img src="./assets/img/shw.png" alt="" class="max-[645px]:hidden">
+    <div class="py-[30px]">
+        <div class="container2 flex flex-col gap-[20px] text-[#3e4d31] font-[500]">
+            <label for="filter"
+                class="w-full cursor-pointer select-none border border-[#3e4d3154] hover:bg-[#3e4d31] hover:text-[#fff] transition duration-[.2s] active:scale-[.99] p-[10px] rounded-md bg-[#f5f5f5]">
+                Фильтр по параметрам
+            </label>
 
-                                    <div
-                                        class="flex flex-col justify-center items-center gap-[20px] text-center text-[#fff]">
-                                        <h1 class="text-[30px] leading-[100%] font-[500] max-[440px]:text-[20px]">
-                                            Большой <br>
-                                            и еще больше
-                                        </h1>
+            <input type="checkbox" id="filter" class="hidden">
+            <div class="flex flex-col gap-[20px] overflow-hidden">
+                <div class="flex flex-col gap-[10px]">
+                    <h2 class="w-full border-b pb-[10px]">Бренд</h2>
+                    <label for="check1" class="flex justify-start items-center gap-[10px]">
+                        <input type="checkbox" id="check1">
+                        Apple
+                    </label>
 
-                                        <p class="max-[440px]:text-[13px]">
-                                            Iphone 14 pro и Iphone 14 pro Max уже в продаже.
-                                        </p>
+                    <label for="check2" class="flex justify-start items-center gap-[10px]">
+                        <input type="checkbox" id="check2">
+                        Samsung
+                    </label>
 
-                                        <a href="#!" class="btn btn-w">
-                                            Купить
-                                        </a>
-                                    </div>
-                                </div>
+                    <label for="check3" class="flex justify-start items-center gap-[10px]">
+                        <input type="checkbox" id="check3">
+                        Xiaomi
+                    </label>
+                </div>
+
+                <div class="flex flex-col gap-[10px]">
+                    <h2 class="w-full border-b pb-[10px]">Цена</h2>
+
+                    <div class="flex justify-start items-center gap-[5px] max-[330px]:flex-col max-[330px]:items-start">
+                        <input type="text" placeholder="от" class="w-[120px] p-[5px] rounded-md border outline-none ">
+                        <p class="max-[330px]:hidden">-</p>
+                        <input type="text" placeholder="до" class="w-[120px] p-[5px] rounded-md border outline-none ">
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-[10px]">
+                    <h2 class="w-full border-b pb-[10px]">Цвет</h2>
+
+                    <div class="w-[30%] max-[650px]:w-[50%] max-[370px]:w-full">
+                        <div class="grid grid-cols-4 gap-[8px]">
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#f2edcb] cursor-pointer active:scale-[.95]">
                             </div>
-
-                            <div class="swiper-slide">
-                                <div
-                                    class="rounded-md bg-[#262626] overflow-hidden flex w-full max-[645px]:py-[30px] max-[645px]:justify-center justify-between px-[30px]">
-                                    <img src="./assets/img/shw.png" alt="" class="max-[645px]:hidden">
-
-                                    <div
-                                        class="flex flex-col justify-center items-center gap-[20px] text-center text-[#fff]">
-                                        <h1 class="text-[30px] leading-[100%] font-[500] max-[440px]:text-[20px]">
-                                            Большой <br>
-                                            и еще больше
-                                        </h1>
-
-                                        <p class="max-[440px]:text-[13px]">
-                                            Iphone 14 pro и Iphone 14 pro Max уже в продаже.
-                                        </p>
-
-                                        <a href="#!" class="btn btn-w">
-                                            Купить
-                                        </a>
-                                    </div>
-                                </div>
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#b3b3b3] cursor-pointer active:scale-[.95]">
                             </div>
-
-                            <div class="swiper-slide">
-                                <div
-                                    class="rounded-md bg-[#262626] overflow-hidden flex w-full max-[645px]:py-[30px] max-[645px]:justify-center justify-between px-[30px]">
-                                    <img src="./assets/img/shw.png" alt="" class="max-[645px]:hidden">
-
-                                    <div
-                                        class="flex flex-col justify-center items-center gap-[20px] text-center text-[#fff]">
-                                        <h1 class="text-[30px] leading-[100%] font-[500] max-[440px]:text-[20px]">
-                                            Большой <br>
-                                            и еще больше
-                                        </h1>
-
-                                        <p class="max-[440px]:text-[13px]">
-                                            Iphone 14 pro и Iphone 14 pro Max уже в продаже.
-                                        </p>
-
-                                        <a href="#!" class="btn btn-w">
-                                            Купить
-                                        </a>
-                                    </div>
-                                </div>
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#6893f0] cursor-pointer active:scale-[.95]">
+                            </div>
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#ffd700] cursor-pointer active:scale-[.95]">
+                            </div>
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#257d1d] cursor-pointer active:scale-[.95]">
+                            </div>
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#ccaa8a] cursor-pointer active:scale-[.95]">
+                            </div>
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#ffc0cb] cursor-pointer active:scale-[.95]">
+                            </div>
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#2b2b87] cursor-pointer active:scale-[.95]">
+                            </div>
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#cc95c6] cursor-pointer active:scale-[.95]">
+                            </div>
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#f00] cursor-pointer active:scale-[.95]">
+                            </div>
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#808080] cursor-pointer active:scale-[.95]">
+                            </div>
+                            <div
+                                class="h-[30px] w-[30px] opacity-80 hover:opacity-100 rounded-full bg-[#3e4d31] cursor-pointer active:scale-[.95]">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-span-1">
-                    <div class="swiper mySwiper2 h-full">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div
-                                    class="rounded-md border p-[20px] flex flex-col justify-between h-full max-[1020px]:gap-[20px]">
+                <div class="flex flex-col gap-[10px]">
+                    <h2 class="w-full border-b pb-[10px]">Серия</h2>
 
-                                    <div class="w-full flex justify-center items-center">
-                                        <img src="./assets/img/product/1.png" alt="" class="max-[440px]:w-[80px]">
-                                    </div>
-
-                                    <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span
-                                            class="max-[440px]:hidden">Aluminium Case,
-                                            серебристый/синий омут</span></p>
-
-                                    <div class="flex text-[yellow] text-[13px] justify-start items-center gap-[3px]">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-
-                                    <div class="flex justify-between w-full">
-                                        <h3 class="font-[600] text-[20px]">31 990 ₽</h3>
-
-                                        <a href="#!" class="btn max-[320px]:hidden">Купить</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div
-                                    class="rounded-md border p-[20px] flex flex-col justify-between h-full max-[1020px]:gap-[20px]">
-
-                                    <div class="w-full flex justify-center items-center">
-                                        <img src="./assets/img/product/3.png" alt="" class="max-[440px]:w-[80px]">
-                                    </div>
-
-                                    <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span
-                                            class="max-[440px]:hidden">Aluminium Case,
-                                            серебристый/синий омут</span></p>
-
-                                    <div class="flex text-[yellow] text-[13px] justify-start items-center gap-[3px]">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-
-                                    <div class="flex justify-between w-full">
-                                        <h3 class="font-[600] text-[20px]">31 990 ₽</h3>
-
-                                        <a href="#!" class="btn max-[320px]:hidden">Купить</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div
-                                    class="rounded-md border p-[20px] flex flex-col justify-between h-full max-[1020px]:gap-[20px]">
-
-                                    <div class="w-full flex justify-center items-center">
-                                        <img src="./assets/img/product/2.png" alt="" class="max-[440px]:w-[80px]">
-                                    </div>
-
-                                    <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span
-                                            class="max-[440px]:hidden">Aluminium Case,
-                                            серебристый/синий омут</span></p>
-
-                                    <div class="flex text-[yellow] text-[13px] justify-start items-center gap-[3px]">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-
-                                    <div class="flex justify-between w-full">
-                                        <h3 class="font-[600] text-[20px]">31 990 ₽</h3>
-
-                                        <a href="#!" class="btn max-[320px]:hidden">Купить</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <ul>
+                        <li><a href="#!" class="border-b opacity-80 hover:opacity-100">S series</a></li>
+                        <li><a href="#!" class="border-b opacity-80 hover:opacity-100">Tab series</a></li>
+                        <li><a href="#!" class="border-b opacity-80 hover:opacity-100">Z series</a></li>
+                        <li><a href="#!" class="border-b opacity-80 hover:opacity-100">Apple 14 series</a></li>
+                        <li><a href="#!" class="border-b opacity-80 hover:opacity-100">Apple 15 series</a></li>
+                    </ul>
                 </div>
             </div>
-
         </div>
-        </div>
-    </section>
-
-    <section class="py-[40px]">
-        <div class="container2">
-            <div class="grid grid-cols-3 gap-[24px] max-[1020px]:grid-cols-2 max-[660px]:grid-cols-1">
-                <div
-                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
-                    <p>Смартфоны</p>
-                
-                    <img src="./assets/img/catalog/1.png" alt="" class="w-[80px] max-[350px]:w-[80px]">
-                </div>
-                
-                <div
-                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
-                    <p>Планшеты</p>
-                
-                    <img src="./assets/img/catalog/2.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
-                </div>
-                
-                <div
-                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
-                    <p>Ноутбуки</p>
-                
-                    <img src="./assets/img/catalog/3.png" alt="" class="w-[140px] max-[350px]:w-[80px]">
-                </div>
-                
-                <div
-                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
-                    <p>Наушники</p>
-                
-                    <img src="./assets/img/catalog/4.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
-                </div>
-                
-                <div
-                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
-                    <p>Смарт-часы</p>
-                
-                    <img src="./assets/img/catalog/5.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
-                </div>
-                
-                <div
-                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
-                    <p>Аксессуары</p>
-                
-                    <img src="./assets/img/catalog/6.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
-                </div>
-
-            </div>
-        </div>
-    </section>
+    </div>
 
     <section class="py-[30px]">
         <div class="container2">
-            <h1 class="text-[30px] font-[600] text-left mb-[30px]">Товары</h1>
-
             <div class="grid grid-cols-3 max-[940px]:grid-cols-2 max-[545px]:grid-cols-1">
                 <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
 
@@ -501,167 +372,7 @@
                 <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
 
                     <div class="w-full flex justify-center items-center">
-                        <img src="./assets/img/product/7.png" alt="" class="max-[440px]:w-[80px]">
-                    </div>
-
-                    <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span class="max-[440px]:hidden">Aluminium
-                            Case,
-                            серебристый/синий омут</span></p>
-
-                    <div class="flex text-[yellow] text-[13px] justify-start items-center gap-[3px]">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="flex justify-between w-full items-center">
-                        <h3 class="font-[600] text-[20px] max-[350px]:text-[16px]">31 990 ₽</h3>
-
-                        <a href="#!" class="btn">Купить</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-[40px]">
-        <div class="container2">
-            <img src="./assets/img/banner.png" alt="" class="rounded-md">
-        </div>
-    </section>
-
-    <section class="py-[40px]">
-        <div class="container2">
-            <!-- Swiper -->
-            <div class="swiper mySwiper3">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="h-[30px] flex justify-center items-center">
-                            <img src="./assets/img/sponsors/1.png" alt="" class="object-contain h-full w-full">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="h-[30px] flex justify-center items-center">
-                            <img src="./assets/img/sponsors/2.png" alt="" class="object-cover h-full w-full">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="h-[30px] flex justify-center items-center">
-                            <img src="./assets/img/sponsors/3.png" alt="" class="object-contain h-full w-full">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="h-[30px] flex justify-center items-center">
-                            <img src="./assets/img/sponsors/4.png" alt="" class="object-cover h-full w-full">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="h-[30px] flex justify-center items-center">
-                            <img src="./assets/img/sponsors/5.png" alt="" class="object-contain h-full w-full">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="h-[30px] flex justify-center items-center">
-                            <img src="./assets/img/sponsors/6.png" alt="" class="object-contain h-full w-full">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="h-[30px] flex justify-center items-center">
-                            <img src="./assets/img/sponsors/3.png" alt="" class="object-contain h-full w-full">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-[30px]">
-        <div class="container2">
-            <div
-                class="p-[50px_20px] bg-[linear-gradient(82deg,_#5f6308_0%,_#302f02_100%)] max-[430px]:px-5 max-[430px]:py-10 rounded-[15px] text-[white] flex items-center justify-between gap-10 max-[1010px]:flex-col-reverse max-[1010px]:items-start">
-                <div class="flex flex-col gap-[20px]">
-                    <h1
-                        class="text-[37px] leading-[100%] font-bold max-[1165px]:text-[30px] max-[1076px]:text-[25px] max-[400px]:text-[20px]">
-                        Всем своим покупателем
-                        мы говорим:
-                        «Глупый вопрос — не
-                        заданный вопрос!» 
-                    </h1>
-                    <p class="text-[#D8D8CE] font-normal">
-                        Так что не стесняйтесь! Пишите, <br class="max-[1010px]:hidden" />
-                        звоните, консультируйтесь. Мы <br class="max-[1010px]:hidden" />
-                        всегда рады Вам помочь!
-                    </p>
-                </div>
-
-
-                <div>
-                    <div class="flex items-center gap-2 text-black max-[369px]:flex-col">
-                        <input class="rounded-[7px] outline-none p-2 max-[1010px]:w-[100%]" placeholder="Ваше имя"
-                            type="text" />
-                        <input class="rounded-[7px] outline-none p-2 max-[1010px]:w-[100%]" placeholder="Телефон"
-                            type="text" />
-                    </div>
-                    <h1 class="py-5 max-[345px]:hidden">Предпочтительный способ связи:</h1>
-                    <div class="flex items-center gap-5 flex-wrap">
-                        <label class="text-[#d8d8ce] flex gap-2 items-center" for="tg">
-                            <input id="tg" type="checkbox" />Telegram
-                        </label>
-                        <label class="text-[#d8d8ce] flex gap-2 items-center" for="wtsp">
-                            <input id="wtsp" type="checkbox" />WhatsApp
-                        </label>
-                        <label class="text-[#d8d8ce] flex gap-2 items-center" for="call">
-                            <input id="call" type="checkbox" />Звонок
-                        </label>
-                    </div>
-                    <button
-                        class="my-5 bg-[#3e4d31] text-white border border-[#3e4d31] hover:bg-white hover:text-[#3e4d31] active:scale-[0.9] transition-all py-2 w-[100%] rounded">
-                        Отправить
-                    </button>
-                    <label class="text-[#fff] text-[13px] flex gap-2 items-center" for="some">
-                        <input id="some" type="checkbox" />Отправляя заявку, вы даете
-                        согласие на обработку персональных данных
-                    </label>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-[30px]">
-        <div class="container2">
-            <div class="grid grid-cols-2 gap-[10px] mb-[10px]">
-                <div>
-                    <img src="./assets/img/grid/1.png" alt="" class="h-full w-full object-cover">
-                </div>
-
-                <div>
-                    <img src="./assets/img/grid/2.png" alt="" class="h-full w-full object-cover">
-                </div>
-            </div>
-
-            <div class="w-full p-[20px] flex justify-center items-center bg-[#000]">
-                <img src="./assets/img/grid/3.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="py-[30px]">
-        <div class="container2">
-            <h1 class="text-[30px] font-[600] text-center mb-[30px]">Просмотренные товары</h1>
-
-            <div class="grid grid-cols-3 max-[940px]:grid-cols-2 max-[545px]:grid-cols-1">
-                <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
-
-                    <div class="w-full flex justify-center items-center">
-                        <img src="./assets/img/product/1.png" alt="" class="max-[440px]:w-[80px]">
+                        <img src="./assets/img/product/7.png" alt="" class=" h-[120px] max-[440px]:h-[80px]">
                     </div>
 
                     <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span class="max-[440px]:hidden">Aluminium
@@ -683,11 +394,12 @@
                     </div>
                 </div>
 
-                <!-- 2 -->
+
+                <!-- 4 -->
                 <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
 
                     <div class="w-full flex justify-center items-center">
-                        <img src="./assets/img/product/2.png" alt="" class="max-[440px]:w-[80px]">
+                        <img src="./assets/img/product/4.png" alt="" class="max-[440px]:w-[80px]">
                     </div>
 
                     <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span class="max-[440px]:hidden">Aluminium
@@ -709,11 +421,37 @@
                     </div>
                 </div>
 
-                <!-- 3 -->
+                <!-- 5 -->
                 <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
 
                     <div class="w-full flex justify-center items-center">
-                        <img src="./assets/img/product/3.png" alt="" class="max-[440px]:w-[80px]">
+                        <img src="./assets/img/product/6.png" alt="" class="max-[440px]:w-[80px]">
+                    </div>
+
+                    <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span class="max-[440px]:hidden">Aluminium
+                            Case,
+                            серебристый/синий омут</span></p>
+
+                    <div class="flex text-[yellow] text-[13px] justify-start items-center gap-[3px]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="flex justify-between w-full items-center">
+                        <h3 class="font-[600] text-[20px] max-[350px]:text-[16px]">31 990 ₽</h3>
+
+                        <a href="#!" class="btn">Купить</a>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
+
+                    <div class="w-full flex justify-center items-center">
+                        <img src="./assets/img/product/7.png" alt="" class=" h-[120px] max-[440px]:h-[80px]">
                     </div>
 
                     <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span class="max-[440px]:hidden">Aluminium

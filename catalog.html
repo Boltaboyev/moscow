@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="./src/output.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="bg-[#5b5729] py-[10px] max-[890px]:hidden">
+            <div class="container2">
+                <nav class="text-[12px] font-[500] text-[#fff] flex justify-between items-center">
+                    <p><i class="fa-solid fa-location-dot"></i>г. Москва, ул. Барклая, 8</p>
+
+                    <ul class="flex justify-center items-center gap-[30px]">
+                        <li><a href="#!">О компании</a></li>
+                        <li><a href="#!">Доставка и оплата</a></li>
+                        <li><a href="#!">Обмен и возврат</a></li>
+                        <li><a href="#!">Гарантия и сервис</a></li>
+                        <li><a href="#!">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+        <nav class="bg-[#fff] py-[10px]">
+            <div class="container2">
+                <nav class="flex justify-between items-center">
+
+                    <a href="./index.html" class="flex justify-center items-center">
+                        <img src="./assets/img/logo.png" alt="" class="w-[100px] max-[400px]:w-[80px]">
+                    </a>
+
+                    <form action="#!"
+                        class="border-[#ddd] border flex max-[890px]:hidden justify-between items-center h-[40px] rounded-lg overflow-hidden w-[40%]">
+                        <input type="search" placeholder="Поиск" class="p-[5px] h-full outline-none border-none">
+                        <button type="submit" class="btn outline-none border-none h-full p-[5px]">Поиск</button>
+                    </form>
+
+                    <div class="flex justify-center items-center gap-[10px] max-[890px]:hidden">
+                        <div
+                            class="h-[40px] w-[40px] cursor-pointer hover:shadow-[0_0_2px_0_blue] active:scale-[.95] rounded-full bg-[#f4f4f4] flex justify-center items-center">
+                            <img src="./assets/svg/telegram.svg" alt="">
+                        </div>
+
+                        <div
+                            class="h-[40px] w-[40px] cursor-pointer hover:shadow-[0_0_2px_0_blue] active:scale-[.95] rounded-full bg-[#f4f4f4] flex justify-center items-center">
+                            <img src="./assets/svg/whatsap.svg" alt="">
+                        </div>
+                    </div>
+
+                    <a href="#!" class="font-[600] flex justify-center items-center max-[890px]:hidden gap-[10px]"><i
+                            class="fa-solid fa-phone text-[#3e4d31]"></i> +7 (916) 842-34-30</a>
+
+                    <div class="flex justify-center items-center gap-[10px] max-[890px]:hidden">
+                        <a href="#!"><i class="text-[19px] text-[#3e4d31] fa-solid fa-list"></i></a>
+                        <a href="#!"><i class="text-[19px] text-[#3e4d31] fa-solid fa-heart"></i></a>
+                    </div>
+
+                    <label for="nav" class="text-[24px] text-[#3e4d31] hidden max-[890px]:block">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </nav>
+            </div>
+        </nav>
+
+        <nav class="py-[10px] max-[970px]:hidden">
+            <div class="container2 flex justify-between items-center">
+                <a href="#!" class="btn flex justify-center items-center gap-[5px]"><i class="fa-solid fa-bars"></i>
+                    Каталог</a>
+
+                <a href="#!" class="font-[500] text-[14px] opacity-70 hover:opacity-100">iPhone 14 Pro Макс 256</a>
+                <a href="#!" class="font-[500] text-[14px] opacity-70 hover:opacity-100">Apple TV 4K 2022</a>
+                <a href="#!" class="font-[500] text-[14px] opacity-70 hover:opacity-100">Apple Watch Series Ultra</a>
+                <a href="#!" class="font-[500] text-[14px] opacity-70 hover:opacity-100">MacBook Pro 14 M2</a>
+                <a href="#!" class="font-[500] text-[14px] opacity-70 hover:opacity-100">iPad Pro M2</a>
+            </div>
+        </nav>
+
+        <!-- mobile nav -->
+        <input type="checkbox" name="" id="nav" class="hidden">
+        <nav
+            class="fixed top-0 left-[-100%] h-[100vh] w-[70%] bg-[#fff] z-[999] max-[390px]:w-full flex flex-col justify-center items-start gap-[10px] p-[20px] text-[#3e4d31] font-[500]">
+
+            <label for="nav" class="text-[#3e4d31] text-[20px] absolute right-[20px] top-[20px]">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+
+            <ul class="flex flex-col gap-[10px]">
+                <li><a href="#!">О компании</a></li>
+                <li><a href="#!">Доставка и оплата</a></li>
+                <li><a href="#!">Обмен и возврат</a></li>
+                <li><a href="#!">Гарантия и сервис</a></li>
+                <li><a href="#!">Контакты</a></li>
+            </ul>
+
+            <ul class="flex flex-col gap-[10px] py-[10px] border-t border-b  w-full">
+                <li><a href="#!">iPhone 14 Pro</a></li>
+                <li><a href="#!">Apple TV 4K</a></li>
+                <li><a href="#!">Apple Watch</a></li>
+                <li><a href="#!">MacBook Pro 14</a></li>
+                <li><a href="#!">iPad Pro M2</a></li>
+            </ul>
+
+            <a href="#!">+7 (916) 842-34-30</a>
+
+            <div class="flex justify-start items-center gap-[10px]">
+                <div
+                    class="h-[40px] w-[40px] cursor-pointer hover:shadow-[0_0_2px_0_blue] active:scale-[.95] rounded-full bg-[#f4f4f4] flex justify-center items-center">
+                    <img src="./assets/svg/telegram.svg" alt="">
+                </div>
+
+                <div
+                    class="h-[40px] w-[40px] cursor-pointer hover:shadow-[0_0_2px_0_blue] active:scale-[.95] rounded-full bg-[#f4f4f4] flex justify-center items-center">
+                    <img src="./assets/svg/whatsap.svg" alt="">
+                </div>
+            </div>
+        </nav>
+
+        <label for="nav"
+            class="blur hidden h-[100vh] w-full bg-[#3e4d315b] backdrop-blur-[2px] z-[666] fixed top-0 left-0"></label>
+    </header>
+
+    <div class="py-[10px]">
+        <div class="container2 text-[#3e4d31] font-[600] flex justify-start items-center gap-[10px]">
+            <a href="./index.html" class="border-b border-[#3e4d31]">page 1</a>
+            <p>/</p>
+            <a href="./product.html" class="border-b border-[#3e4d31]">page 3</a>
+        </div>
+    </div>
+
+    <section class="py-[40px]">
+        <div class="container2">
+            <div class="grid grid-cols-3 gap-[24px] max-[1020px]:grid-cols-2 max-[660px]:grid-cols-1">
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Смартфоны</p>
+
+                    <img src="./assets/img/catalog/1.png" alt="" class="w-[80px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Планшеты</p>
+
+                    <img src="./assets/img/catalog/2.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Ноутбуки</p>
+
+                    <img src="./assets/img/catalog/3.png" alt="" class="w-[140px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Наушники</p>
+
+                    <img src="./assets/img/catalog/4.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Смарт-часы</p>
+
+                    <img src="./assets/img/catalog/5.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Аксессуары</p>
+
+                    <img src="./assets/img/catalog/6.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <!--  -->
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Колонки</p>
+
+                    <img src="./assets/img/catalog/7.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Игровые приставки</p>
+
+                    <img src="./assets/img/catalog/8.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Квадрокоптеры</p>
+
+                    <img src="./assets/img/catalog/9.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Медиаплееры</p>
+
+                    <img src="./assets/img/catalog/10.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Умный дом</p>
+
+                    <img src="./assets/img/catalog/11.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Экшен-камеры</p>
+
+                    <img src="./assets/img/catalog/12.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Фотоаппараты</p>
+
+                    <img src="./assets/img/catalog/13.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>ТВ</p>
+
+                    <img src="./assets/img/catalog/15.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+                <div
+                    class="px-[15px] flex rounded-md py-[20px] justify-between items-center border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
+                    <p>Sale</p>
+
+                    <img src="./assets/img/catalog/14.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <section class="py-[30px]">
+        <div class="container2">
+            <div
+                class="p-[50px_20px] bg-[linear-gradient(82deg,_#5f6308_0%,_#302f02_100%)] max-[430px]:px-5 max-[430px]:py-10 rounded-[15px] text-[white] flex items-center justify-between gap-10 max-[1010px]:flex-col-reverse max-[1010px]:items-start">
+                <div class="flex flex-col gap-[20px]">
+                    <h1
+                        class="text-[37px] leading-[100%] font-bold max-[1165px]:text-[30px] max-[1076px]:text-[25px] max-[400px]:text-[20px]">
+                        Всем своим покупателем
+                        мы говорим:
+                        «Глупый вопрос — не
+                        заданный вопрос!» 
+                    </h1>
+                    <p class="text-[#D8D8CE] font-normal">
+                        Так что не стесняйтесь! Пишите, <br class="max-[1010px]:hidden" />
+                        звоните, консультируйтесь. Мы <br class="max-[1010px]:hidden" />
+                        всегда рады Вам помочь!
+                    </p>
+                </div>
+
+
+                <div>
+                    <div class="flex items-center gap-2 text-black max-[369px]:flex-col">
+                        <input class="rounded-[7px] outline-none p-2 max-[1010px]:w-[100%]" placeholder="Ваше имя"
+                            type="text" />
+                        <input class="rounded-[7px] outline-none p-2 max-[1010px]:w-[100%]" placeholder="Телефон"
+                            type="text" />
+                    </div>
+                    <h1 class="py-5 max-[345px]:hidden">Предпочтительный способ связи:</h1>
+                    <div class="flex items-center gap-5 flex-wrap">
+                        <label class="text-[#d8d8ce] flex gap-2 items-center" for="tg">
+                            <input id="tg" type="checkbox" />Telegram
+                        </label>
+                        <label class="text-[#d8d8ce] flex gap-2 items-center" for="wtsp">
+                            <input id="wtsp" type="checkbox" />WhatsApp
+                        </label>
+                        <label class="text-[#d8d8ce] flex gap-2 items-center" for="call">
+                            <input id="call" type="checkbox" />Звонок
+                        </label>
+                    </div>
+                    <button
+                        class="my-5 bg-[#3e4d31] text-white border border-[#3e4d31] hover:bg-white hover:text-[#3e4d31] active:scale-[0.9] transition-all py-2 w-[100%] rounded">
+                        Отправить
+                    </button>
+                    <label class="text-[#fff] text-[13px] flex gap-2 items-center" for="some">
+                        <input id="some" type="checkbox" />Отправляя заявку, вы даете
+                        согласие на обработку персональных данных
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-[30px]">
+        <div class="container2">
+            <h1 class="text-[30px] font-[600] text-center mb-[30px]">Просмотренные товары</h1>
+
+            <div class="grid grid-cols-3 max-[940px]:grid-cols-2 max-[545px]:grid-cols-1">
+                <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
+
+                    <div class="w-full flex justify-center items-center">
+                        <img src="./assets/img/product/1.png" alt="" class="max-[440px]:w-[80px]">
+                    </div>
+
+                    <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span class="max-[440px]:hidden">Aluminium
+                            Case,
+                            серебристый/синий омут</span></p>
+
+                    <div class="flex text-[yellow] text-[13px] justify-start items-center gap-[3px]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="flex justify-between w-full items-center">
+                        <h3 class="font-[600] text-[20px] max-[350px]:text-[16px]">31 990 ₽</h3>
+
+                        <a href="#!" class="btn">Купить</a>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
+
+                    <div class="w-full flex justify-center items-center">
+                        <img src="./assets/img/product/2.png" alt="" class="max-[440px]:w-[80px]">
+                    </div>
+
+                    <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span class="max-[440px]:hidden">Aluminium
+                            Case,
+                            серебристый/синий омут</span></p>
+
+                    <div class="flex text-[yellow] text-[13px] justify-start items-center gap-[3px]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="flex justify-between w-full items-center">
+                        <h3 class="font-[600] text-[20px] max-[350px]:text-[16px]">31 990 ₽</h3>
+
+                        <a href="#!" class="btn">Купить</a>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
+
+                    <div class="w-full flex justify-center items-center">
+                        <img src="./assets/img/product/3.png" alt="" class="max-[440px]:w-[80px]">
+                    </div>
+
+                    <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span class="max-[440px]:hidden">Aluminium
+                            Case,
+                            серебристый/синий омут</span></p>
+
+                    <div class="flex text-[yellow] text-[13px] justify-start items-center gap-[3px]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="flex justify-between w-full items-center">
+                        <h3 class="font-[600] text-[20px] max-[350px]:text-[16px]">31 990 ₽</h3>
+
+                        <a href="#!" class="btn">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#5B5729] py-[40px]">
+        <div class="container2 text-[#fff]">
+            <div class="grid grid-cols-4 max-[900px]:grid-cols-2 max-[900px]:gap-[30px] max-[370px]:grid-cols-1">
+                <ul class="flex flex-col justify-start items-start gap-[10px]">
+                    <li><a href="#!">О компании</a></li>
+                    <li><a href="#!">Доставка и оплата</a></li>
+                    <li><a href="#!">Обмен и возврат</a></li>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[10px]">
+                    <li><a href="#!">Гарантия и сервис</a></li>
+                    <li><a href="#!">Контакты</a></li>
+                    <li><a href="#!">Каталог</a></li>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[10px]">
+                    <li class="list-disc">г. Москва, ул. Барклая, 8</li>
+                    <li class="list-disc">10:00 — 21:00 без выходных</li>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[10px]">
+                    <li><a href="#!">+7 (916) 842-34-30</a></li>
+                    <li><a href="#!">moscow@mail.ru</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="py-[15px]">
+        <div class="container2 flex justify-between items-center max-[760px]:flex-col max-[760px]:gap-[20px]">
+            <ul
+                class="flex justify-center items-center gap-[30px] text-[14px] font-[400] max-[760px]:flex-col max-[760px]:gap-[10px]">
+                <li><a href="#!">© 2023 gorbushka-moscow</a></li>
+                <li><a href="#!">Политика конфиденциальности</a></li>
+            </ul>
+
+            <div class="flex justify-center items-center gap-[10px]">
+                <img src="./assets/img/footer.png" alt="" class="w-[30px]">
+                <div class=" flex flex-col text-[14px] font-[400]">
+                    <p>Разработка сайта</p>
+                    <p>Студия «СТРОИМ САЙТ»</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
