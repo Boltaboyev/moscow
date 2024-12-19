@@ -47,3 +47,43 @@ var swiper3 = new Swiper(".mySwiper3", {
     },
     loop: true,
 })
+
+var swiper4 = new Swiper(".mySwiper4", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    },
+
+    loop: true,
+})
+
+const deliveryBtn = document.querySelector(".delivery-btn")
+const paymentBtn = document.querySelector(".payment-btn")
+const deliveryInfo = document.querySelector(".delivery-info")
+const paymentInfo = document.querySelector(".payment-info")
+
+deliveryBtn.addEventListener("click", () => {
+    deliveryInfo.classList.remove("hidden")
+    paymentInfo.classList.add("hidden")
+    deliveryBtn.classList.add('active')
+    paymentBtn.classList.remove('active')
+})
+
+paymentBtn.addEventListener("click", () => {
+    paymentInfo.classList.remove("hidden")
+    deliveryInfo.classList.add("hidden")
+    paymentBtn.classList.add('active')
+    deliveryBtn.classList.remove('active')
+})

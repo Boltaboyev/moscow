@@ -77,3 +77,20 @@
     border: 1px solid #3e4d3157;
     padding: 10px;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000 !important;
+    font-size: 2px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px !important;
+}
+
+.active {
+    background: #3e4d31;
+    color: #fff;
+    border-color: #3e4d31;
+}

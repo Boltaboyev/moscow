@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorbushka Moscow</title>
+    <link rel="stylesheet" href="./src/output.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="bg-[#5b5729] py-[10px] max-[890px]:hidden">
+            <div class="container2">
+                <nav class="text-[12px] font-[500] text-[#fff] flex justify-between items-center">
+                    <p><i class="fa-solid fa-location-dot"></i>г. Москва, ул. Барклая, 8</p>
+
+                    <ul class="flex justify-center items-center gap-[30px]">
+                        <li><a href="#!">О компании</a></li>
+                        <li><a href="#!">Доставка и оплата</a></li>
+                        <li><a href="#!">Обмен и возврат</a></li>
+                        <li><a href="#!">Гарантия и сервис</a></li>
+                        <li><a href="#!">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+        <nav class="bg-[#fff] py-[10px]">
+            <div class="container2">
+                <nav class="flex justify-between items-center">
+
+                    <a href="./index.html" class="flex justify-center items-center">
+                        <img src="./assets/img/logo.png" alt="" class="w-[100px] max-[400px]:w-[80px]">
+                    </a>
+
+                    <form action="#!"
+                        class="border-[#ddd] border flex max-[890px]:hidden justify-between items-center h-[40px] rounded-lg overflow-hidden w-[40%]">
+                        <input type="search" placeholder="Поиск" class="p-[5px] h-full outline-none border-none">
+                        <button type="submit" class="btn outline-none border-none h-full p-[5px]">Поиск</button>
+                    </form>
+
+                    <div class="flex justify-center items-center gap-[10px] max-[890px]:hidden">
+                        <div
+                            class="h-[40px] w-[40px] cursor-pointer hover:shadow-[0_0_2px_0_blue] active:scale-[.95] rounded-full bg-[#f4f4f4] flex justify-center items-center">
+                            <img src="./assets/svg/telegram.svg" alt="">
+                        </div>
+
+                        <div
+                            class="h-[40px] w-[40px] cursor-pointer hover:shadow-[0_0_2px_0_blue] active:scale-[.95] rounded-full bg-[#f4f4f4] flex justify-center items-center">
+                            <img src="./assets/svg/whatsap.svg" alt="">
+                        </div>
+                    </div>
+
+                    <a href="#!" class="font-[600] flex justify-center items-center max-[890px]:hidden gap-[10px]"><i
+                            class="fa-solid fa-phone text-[#3e4d31]"></i> +7 (916) 842-34-30</a>
+
+                    <div class="flex justify-center items-center gap-[10px] max-[890px]:hidden">
+                        <a href="#!"><i class="text-[19px] text-[#3e4d31] fa-solid fa-list"></i></a>
+                        <a href="#!"><i class="text-[19px] text-[#3e4d31] fa-solid fa-heart"></i></a>
+                    </div>
+
+                    <label for="nav" class="text-[24px] text-[#3e4d31] hidden max-[890px]:block">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </nav>
+            </div>
+        </nav>
+
+        <nav class="py-[10px] max-[970px]:hidden">
+            <div class="container2 flex justify-between items-center">
+                <a href="#!" class="btn flex justify-center items-center gap-[5px]"><i class="fa-solid fa-bars"></i>
+                    Каталог</a>
+
+                <a href="#!" class="font-[500] text-[14px] opacity-70 hover:opacity-100">iPhone 14 Pro Макс 256</a>
+                <a href="#!" class="font-[500] text-[14px] opacity-70 hover:opacity-100">Apple TV 4K 2022</a>
+                <a href="#!" class="font-[500] text-[14px] opacity-70 hover:opacity-100">Apple Watch Series Ultra</a>
+                <a href="#!" class="font-[500] text-[14px] opacity-70 hover:opacity-100">MacBook Pro 14 M2</a>
+                <a href="#!" class="font-[500] text-[14px] opacity-70 hover:opacity-100">iPad Pro M2</a>
+            </div>
+        </nav>
+
+        <!-- mobile nav -->
+        <input type="checkbox" name="" id="nav" class="hidden">
+        <nav
+            class="fixed top-0 left-[-100%] h-[100vh] w-[70%] bg-[#fff] z-[999] max-[390px]:w-full flex flex-col justify-center items-start gap-[10px] p-[20px] text-[#3e4d31] font-[500]">
+
+            <label for="nav" class="text-[#3e4d31] text-[20px] absolute right-[20px] top-[20px]">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+
+            <ul class="flex flex-col gap-[10px]">
+                <li><a href="#!">О компании</a></li>
+                <li><a href="#!">Доставка и оплата</a></li>
+                <li><a href="#!">Обмен и возврат</a></li>
+                <li><a href="#!">Гарантия и сервис</a></li>
+                <li><a href="#!">Контакты</a></li>
+            </ul>
+
+            <ul class="flex flex-col gap-[10px] py-[10px] border-t border-b  w-full">
+                <li><a href="#!">iPhone 14 Pro</a></li>
+                <li><a href="#!">Apple TV 4K</a></li>
+                <li><a href="#!">Apple Watch</a></li>
+                <li><a href="#!">MacBook Pro 14</a></li>
+                <li><a href="#!">iPad Pro M2</a></li>
+            </ul>
+
+            <a href="#!">+7 (916) 842-34-30</a>
+
+            <div class="flex justify-start items-center gap-[10px]">
+                <div
+                    class="h-[40px] w-[40px] cursor-pointer hover:shadow-[0_0_2px_0_blue] active:scale-[.95] rounded-full bg-[#f4f4f4] flex justify-center items-center">
+                    <img src="./assets/svg/telegram.svg" alt="">
+                </div>
+
+                <div
+                    class="h-[40px] w-[40px] cursor-pointer hover:shadow-[0_0_2px_0_blue] active:scale-[.95] rounded-full bg-[#f4f4f4] flex justify-center items-center">
+                    <img src="./assets/svg/whatsap.svg" alt="">
+                </div>
+            </div>
+        </nav>
+
+        <label for="nav"
+            class="blur hidden h-[100vh] w-full bg-[#3e4d315b] backdrop-blur-[2px] z-[666] fixed top-0 left-0"></label>
+    </header>
+
+    <div class="py-[10px]">
+        <div class="container2 text-[#3e4d31] font-[600] flex justify-start items-center gap-[10px] flex-wrap">
+            <a href="./index.html" class="border-b border-[#3e4d31]">page 1</a>
+            <p>/</p>
+            <a href="./catalog.html" class="border-b border-[#3e4d31]">page 2</a>
+            <p>/</p>
+            <a href="./product.html" class="border-b border-[#3e4d31]">page 3</a>
+            <p>/</p>
+            <a href="#!" class="border-b border-[#3e4d31] opacity-65">page 4</a>
+            <p>/</p>
+            <a href="./info.html" class="border-b border-[#3e4d31]">page 5</a>
+            <p>/</p>
+            <a href="./about.html" class="border-b border-[#3e4d31]">page 6</a>
+        </div>
+    </div>
+
+    <section class="py-[20px]">
+        <div class="container2">
+            <h1 class="font-[500] mb-[40px] text-[#262626] leading-[140%] text-[24px] max-[550px]:text-[16px]">Смартфон
+                Apple iPhone 11 128GB
+                Purple</h1>
+
+
+            <div class="grid grid-cols-2 gap-[30px] max-[755px]:grid-cols-1">
+                <div class="flex flex-col justify-between gap-[50px]">
+                    <div class="self-center">
+                        <img src="./assets/img/product/3.png" alt=""
+                            class="h-[270px] max-[915px]:h-[200px] max-[400px]:h-[150px]">
+                    </div>
+
+                    <div class="w-full">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="flex justify-center items-center">
+                                        <img src="./assets/img/product/3.png" alt=""
+                                            class="h-[90px] max-[400px]:h-[65px]">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="flex justify-center items-center">
+                                        <img src="./assets/img/product/3.png" alt=""
+                                            class="h-[90px] max-[400px]:h-[65px]">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="flex justify-center items-center">
+                                        <img src="./assets/img/product/3.png" alt=""
+                                            class="h-[90px] max-[400px]:h-[65px]">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="flex justify-center items-center">
+                                        <img src="./assets/img/product/3.png" alt=""
+                                            class="h-[90px] max-[400px]:h-[65px]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="max-[510px]:hidden">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-[20px] max-[400px]:gap-[10px]">
+                    <div class="flex justify-start items-center gap-[20px] font-[500] text-[20px]">
+                        <h1>126 690 ₽</h1>
+                        <h1 class="line-through opacity-35">136 690 ₽</h1>
+                    </div>
+
+                    <div class="flex justify-start items-center gap-[20px]">
+                        <div class="flex justify-start text-[12px] text-[orange] items-center gap-[3px]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <a href="#!" class="underline text-[14px] font-[500] opacity-80">Смотреть отзывы</a>
+                    </div>
+
+                    <div class="flex flex-col gap-[3px]">
+                        <h1 class="font-[500] max-[915px]:text-[13px]">Модель:</h1>
+
+                        <div class="flex justify-start items-center gap-[5px]">
+                            <a href="#!"
+                                class="p-[2px_8px] max-[915px]:text-[13px] max-[915px]:p-[1px_5px] border border-[#000] rounded-md active:scale-[.97]">iPhone
+                                11</a>
+                            <a href="#!"
+                                class="p-[2px_8px] max-[915px]:text-[13px] max-[915px]:p-[1px_5px] border border-[#000] opacity-40 hover:opacity-100 active:scale-[.97] rounded-md">11
+                                Pro</a>
+                            <a href="#!"
+                                class="p-[2px_8px] max-[915px]:text-[13px] max-[915px]:p-[1px_5px] border border-[#000] opacity-40 hover:opacity-100 active:scale-[.97] rounded-md">11
+                                Pro Max</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-[3px]">
+                        <h1 class="font-[500] max-[915px]:text-[13px]">Цвет:</h1>
+
+                        <div class="flex justify-start items-center gap-[5px]">
+                            <a href="#!" class="h-[30px] w-[30px] rounded-full bg-[#000] active:scale-[.95]"></a>
+                            <a href="#!" class="h-[30px] w-[30px] rounded-full bg-[#b0a7de] active:scale-[.95]"></a>
+                            <a href="#!" class="h-[30px] w-[30px] rounded-full bg-[#5252e6] active:scale-[.95]"></a>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between max-[400px]:flex-col max-[400px]:gap-[10px]">
+
+                        <div class="flex flex-col gap-[3px]">
+                            <h1 class="font-[500] max-[915px]:text-[13px]">Встроенная память:</h1>
+
+                            <div class="flex justify-start items-center gap-[5px]">
+                                <a href="#!"
+                                    class="p-[2px_8px] max-[915px]:text-[13px] max-[915px]:p-[1px_5px] border border-[#000] rounded-md active:scale-[.97]">128
+                                    GB</a>
+                                <a href="#!"
+                                    class="p-[2px_8px] max-[915px]:text-[13px] max-[915px]:p-[1px_5px] border border-[#000] opacity-40 hover:opacity-100 active:scale-[.97] rounded-md">256
+                                    GB</a>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-[3px]">
+                            <h1 class="font-[500] max-[915px]:text-[13px]">Оперативная память:</h1>
+
+                            <div class="flex justify-start items-center gap-[5px]">
+                                <a href="#!"
+                                    class="p-[2px_8px] max-[915px]:text-[13px] max-[915px]:p-[1px_5px] border border-[#000] rounded-md active:scale-[.97]">8
+                                    GB</a>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-[3px]">
+                            <h1 class="font-[500] max-[915px]:text-[13px]">Экран:</h1>
+
+                            <div class="flex justify-start items-center gap-[5px]">
+                                <a href="#!"
+                                    class="p-[2px_8px] max-[915px]:text-[13px] max-[915px]:p-[1px_5px] border border-[#000] rounded-md active:scale-[.97]">6,1"</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#!"
+                        class="text-[#3e4d31] font-[500] border-b border-[#3e4d31] self-start max-[915px]:text-[13px]">Все
+                        характеристики <i class="fa-solid fa-arrow-right-long"></i></a>
+
+                    <a href="#!" class="btn">Купить</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-[40px]">
+        <div class="container2">
+            <ul
+                class="flex justify-start items-center gap-[80px] font-[500] text-[#3e4d31] py-[40px] max-[800px]:text-[14px] max-[800px]:flex-wrap max-[800px]:gap-[10px]">
+                <li><a href="#!" class="max-[800px]:p-[3px_7px] max-[800px]:border rounded-md">Характеристики</a></li>
+                <li><a href="#!" class="max-[800px]:p-[3px_7px] max-[800px]:border rounded-md">Описание товара</a></li>
+                <li><a href="#!" class="max-[800px]:p-[3px_7px] max-[800px]:border rounded-md">Инструкция</a></li>
+                <li><a href="#!" class="max-[800px]:p-[3px_7px] max-[800px]:border rounded-md">Отзывы</a></li>
+            </ul>
+
+            <div class="w-full">
+                <div class="grid grid-cols-1 gap-16 md:gap-5 md:grid-cols-2">
+                    <div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Экран</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">6.7"/2796x1290 Пикс</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Технология экрана</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">Super Retina XDR</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Встроенная память (ROM)</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">128 ГБ</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Основная камера МПикс</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">48/12/12/TOF</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Оптическая стабилизация</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">Да</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Оптический зум на увеличение (х)</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">3</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Фронтальная камера МПикс</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">12</span>
+                        </div>
+                        <div class="flex justify-between py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Сенсор распознавания лица</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">Да</span>
+                        </div>
+                    </div>
+
+                    <!-- Second Column -->
+                    <div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Экран</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">6.7"/2796x1290 Пикс</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Технология экрана</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">Super Retina XDR</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Встроенная память (ROM)</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">128 ГБ</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Основная камера МПикс</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">48/12/12/TOF</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Оптическая стабилизация</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">Да</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Оптический зум на увеличение (х)</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">3</span>
+                        </div>
+                        <div class="flex justify-between border-b py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Фронтальная камера МПикс</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">12</span>
+                        </div>
+                        <div class="flex justify-between py-2 text-sm sm:text-base max-[305px]:flex-col">
+                            <span class="text-gray-600">Сенсор распознавания лица</span>
+                            <span class="font-[500] max-[465px]:text-[12px]">Да</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- -->
+
+    <section class="py-[30px]">
+        <div class="container2">
+            <h1 class="text-[30px] font-[600] text-center mb-[30px]">Просмотренные товары</h1>
+
+            <div class="grid grid-cols-3 max-[940px]:grid-cols-2 max-[545px]:grid-cols-1">
+                <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
+
+                    <div class="w-full flex justify-center items-center">
+                        <img src="./assets/img/product/1.png" alt="" class="max-[440px]:w-[80px]">
+                    </div>
+
+                    <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span class="max-[440px]:hidden">Aluminium
+                            Case,
+                            серебристый/синий омут</span></p>
+
+                    <div class="flex text-[yellow] text-[13px] justify-start items-center gap-[3px]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="flex justify-between w-full items-center">
+                        <h3 class="font-[600] text-[20px] max-[350px]:text-[16px]">31 990 ₽</h3>
+
+                        <a href="#!" class="btn">Купить</a>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
+
+                    <div class="w-full flex justify-center items-center">
+                        <img src="./assets/img/product/2.png" alt="" class="max-[440px]:w-[80px]">
+                    </div>
+
+                    <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span class="max-[440px]:hidden">Aluminium
+                            Case,
+                            серебристый/синий омут</span></p>
+
+                    <div class="flex text-[yellow] text-[13px] justify-start items-center gap-[3px]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="flex justify-between w-full items-center">
+                        <h3 class="font-[600] text-[20px] max-[350px]:text-[16px]">31 990 ₽</h3>
+
+                        <a href="#!" class="btn">Купить</a>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="border p-[20px] flex flex-col justify-between h-full gap-[20px]">
+
+                    <div class="w-full flex justify-center items-center">
+                        <img src="./assets/img/product/3.png" alt="" class="max-[440px]:w-[80px]">
+                    </div>
+
+                    <p class="font-[400]">Умные часы Apple Watch SE 40 мм <span class="max-[440px]:hidden">Aluminium
+                            Case,
+                            серебристый/синий омут</span></p>
+
+                    <div class="flex text-[yellow] text-[13px] justify-start items-center gap-[3px]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="flex justify-between w-full items-center">
+                        <h3 class="font-[600] text-[20px] max-[350px]:text-[16px]">31 990 ₽</h3>
+
+                        <a href="#!" class="btn">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#5B5729] py-[40px]">
+        <div class="container2 text-[#fff]">
+            <div class="grid grid-cols-4 max-[900px]:grid-cols-2 max-[900px]:gap-[30px] max-[370px]:grid-cols-1">
+                <ul class="flex flex-col justify-start items-start gap-[10px]">
+                    <li><a href="#!">О компании</a></li>
+                    <li><a href="#!">Доставка и оплата</a></li>
+                    <li><a href="#!">Обмен и возврат</a></li>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[10px]">
+                    <li><a href="#!">Гарантия и сервис</a></li>
+                    <li><a href="#!">Контакты</a></li>
+                    <li><a href="#!">Каталог</a></li>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[10px]">
+                    <li class="list-disc">г. Москва, ул. Барклая, 8</li>
+                    <li class="list-disc">10:00 — 21:00 без выходных</li>
+                </ul>
+
+                <ul class="flex flex-col justify-start items-start gap-[10px]">
+                    <li><a href="#!">+7 (916) 842-34-30</a></li>
+                    <li><a href="#!">moscow@mail.ru</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="py-[15px]">
+        <div class="container2 flex justify-between items-center max-[760px]:flex-col max-[760px]:gap-[20px]">
+            <ul
+                class="flex justify-center items-center gap-[30px] text-[14px] font-[400] max-[760px]:flex-col max-[760px]:gap-[10px]">
+                <li><a href="#!">© 2023 gorbushka-moscow</a></li>
+                <li><a href="#!">Политика конфиденциальности</a></li>
+            </ul>
+
+            <div class="flex justify-center items-center gap-[10px]">
+                <img src="./assets/img/footer.png" alt="" class="w-[30px]">
+                <div class=" flex flex-col text-[14px] font-[400]">
+                    <p>Разработка сайта</p>
+                    <p>Студия «СТРОИМ САЙТ»</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

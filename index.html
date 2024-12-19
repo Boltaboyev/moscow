@@ -133,10 +133,18 @@
 
 
     <div class="py-[10px]">
-        <div class="container2 text-[#3e4d31] font-[600] flex justify-start items-center gap-[10px]">
+        <div class="container2 text-[#3e4d31] font-[600] flex justify-start items-center gap-[10px] flex-wrap">
+            <a href="#!" class="border-b border-[#3e4d31] cursor-default opacity-65">page 1</a>
+            <p>/</p>
             <a href="./catalog.html" class="border-b border-[#3e4d31]">page 2</a>
             <p>/</p>
             <a href="./product.html" class="border-b border-[#3e4d31]">page 3</a>
+            <p>/</p>
+            <a href="./cart.html" class="border-b border-[#3e4d31]">page 4</a>
+            <p>/</p>
+            <a href="./info.html" class="border-b border-[#3e4d31]">page 5</a>
+            <p>/</p>
+            <a href="./about.html" class="border-b border-[#3e4d31]">page 6</a>
         </div>
     </div>
 
@@ -320,42 +328,42 @@
                 <div
                     class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
                     <p>Смартфоны</p>
-                
+
                     <img src="./assets/img/catalog/1.png" alt="" class="w-[80px] max-[350px]:w-[80px]">
                 </div>
-                
+
                 <div
                     class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
                     <p>Планшеты</p>
-                
+
                     <img src="./assets/img/catalog/2.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
                 </div>
-                
+
                 <div
                     class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
                     <p>Ноутбуки</p>
-                
+
                     <img src="./assets/img/catalog/3.png" alt="" class="w-[140px] max-[350px]:w-[80px]">
                 </div>
-                
+
                 <div
                     class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
                     <p>Наушники</p>
-                
+
                     <img src="./assets/img/catalog/4.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
                 </div>
-                
+
                 <div
                     class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
                     <p>Смарт-часы</p>
-                
+
                     <img src="./assets/img/catalog/5.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
                 </div>
-                
+
                 <div
                     class="px-[15px] flex rounded-md py-[20px] justify-between items-center  border max-[350px]:flex-col max-[350px]:justify-center max-[350px]:items-center max-[350px]:gap-[10px]">
                     <p>Аксессуары</p>
-                
+
                     <img src="./assets/img/catalog/6.png" alt="" class="w-[100px] max-[350px]:w-[80px]">
                 </div>
 
@@ -589,7 +597,7 @@
                 class="p-[50px_20px] bg-[linear-gradient(82deg,_#5f6308_0%,_#302f02_100%)] max-[430px]:px-5 max-[430px]:py-10 rounded-[15px] text-[white] flex items-center justify-between gap-10 max-[1010px]:flex-col-reverse max-[1010px]:items-start">
                 <div class="flex flex-col gap-[20px]">
                     <h1
-                        class="text-[37px] leading-[100%] font-bold max-[1165px]:text-[30px] max-[1076px]:text-[25px] max-[400px]:text-[20px]">
+                        class="text-[37px] max-[390px]:hidden leading-[100%] font-bold max-[1165px]:text-[30px] max-[1076px]:text-[25px] max-[400px]:text-[20px]">
                         Всем своим покупателем
                         мы говорим:
                         «Глупый вопрос — не
@@ -611,7 +619,7 @@
                             type="text" />
                     </div>
                     <h1 class="py-5 max-[345px]:hidden">Предпочтительный способ связи:</h1>
-                    <div class="flex items-center gap-5 flex-wrap">
+                    <div class="flex items-center max-[345px]:py-5 gap-5 flex-wrap">
                         <label class="text-[#d8d8ce] flex gap-2 items-center" for="tg">
                             <input id="tg" type="checkbox" />Telegram
                         </label>
@@ -627,8 +635,9 @@
                         Отправить
                     </button>
                     <label class="text-[#fff] text-[13px] flex gap-2 items-center" for="some">
-                        <input id="some" type="checkbox" />Отправляя заявку, вы даете
-                        согласие на обработку персональных данных
+                        <input id="some" type="checkbox" />
+                        <p>Отправляя заявку <span class="max-[400px]:hidden">, вы даете
+                                согласие на обработку персональных данных</span></p>
                     </label>
                 </div>
             </div>
